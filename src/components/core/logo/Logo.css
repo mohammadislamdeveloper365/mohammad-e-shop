@@ -1,0 +1,31 @@
+@keyframes logo-shadow {
+    0% {
+        text-shadow: 0.25rem 0.1rem 0.25rem rgb(7, 7, 167);
+    }
+    20% {
+        text-shadow: 0.25rem 0.25rem 0.25rem rgb(26, 255, 0);
+    }
+
+    40% {
+        text-shadow: 0.50rem 0.25rem 0.50rem rgb(7, 7, 7);
+    }
+    60% {
+        text-shadow: 0.25rem 0.1rem 0.25rem rgb(164, 12, 146);
+    }
+
+    80% {
+        text-shadow: 0.50rem 0.20rem 0.25rem rgb(224, 220, 29);
+    }
+
+    100% {
+        
+            text-shadow: 1.25rem 1.0rem 0.25rem rgb(12, 134, 164);
+        
+    }
+}
+.mohammad-e-shop-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color:white;
+    animation:logo-shadow 5s linear 2s infinite;
+}

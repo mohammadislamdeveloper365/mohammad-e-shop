@@ -1,0 +1,7 @@
+.mohammad-e-shop-header {
+    display:flex;
+    padding:1rem 1.5rem;
+    background-color: #6A1B4D;
+    justify-content: space-between;
+    color:white;
+}
