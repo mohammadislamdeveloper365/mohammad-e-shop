@@ -1,0 +1,25 @@
+.mohammad-e-shop-shopping-card {
+    border:1px solid rgb(111, 95, 95);
+    border-radius: 1rem;
+    margin:1rem 1rem;
+    width:20%;
+    position:relative;
+}
+
+.mohammad-e-shop-shopping-card-top {
+    padding:0.5rem;
+}
+.mohammad-e-shop-shopping-card--img {
+    width:100%;
+}
+
+.mohammad-e-shop-shopping-card-description {
+    padding: 1rem 0;
+}
+
+.mohammad-e-shop-shopping-card--btn{
+    width:100%;
+    border-radius:0.5rem;
+    position:absolute;
+    bottom:0px;
+}
