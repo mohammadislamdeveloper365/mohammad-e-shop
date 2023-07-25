@@ -1,7 +1,8 @@
-import classNames from 'classnames'
-import Logo from '../core/logo/Logo'
-import PropTypes from 'prop-types'
-import './Header.css'
+import classNames from 'classnames';
+import Logo from '../core/logo/Logo';
+import Link from '../core/link/Link';
+import PropTypes from 'prop-types';
+import './Header.css';
 
 export default function Header(props) {
   return (
@@ -10,7 +11,24 @@ export default function Header(props) {
         <Logo/>
       </div>
       <div>
-        Links
+        <Link>
+          Home
+        </Link>
+        <Link>
+          Order Review
+        </Link>
+        <Link>
+          Order
+        </Link>
+        <Link>
+          Home
+        </Link>
+        <Link>
+          Inventory
+        </Link>
+        <Link>
+          Login
+        </Link>
       </div>
     </div>
   )
