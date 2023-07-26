@@ -1,7 +1,9 @@
 import Button from '../core/button/Button';
-import classNames from 'classnames'
-import PropTypes from 'prop-types'
-import './ShoppingSummary.css'
+import classNames from 'classnames';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRemove } from '@fortawesome/free-solid-svg-icons';
+import PropTypes from 'prop-types';
+import './ShoppingSummary.css';
 
 export default function ShoppingSummary(props) {
   const { products } = props;
@@ -23,7 +25,10 @@ export default function ShoppingSummary(props) {
         <p className='mohammad-e-shop-container--shopping-summary-style'>Total Shipping Charge: {shippingCharge}</p>
         <p className='mohammad-e-shop-container--shopping-summary-style'>Tax: {tax}</p>
         <p className='mohammad-e-shop-container--shopping-summary-style'>Grand Total: {grandTotal} </p>
-        <Button className='mohammad-e-shop-container--shopping-summary-clear-btn'>Clear Cart</Button>
+        <Button className='mohammad-e-shop-container--shopping-summary-clear-btn'>
+          Clear Cart
+          <FontAwesomeIcon icon={ faRemove } className='font-awesome-clear'/>
+        </Button>
         <Button className='mohammad-e-shop-container--shopping-summary-review-btn'>Review Order</Button>
     </div>
   )

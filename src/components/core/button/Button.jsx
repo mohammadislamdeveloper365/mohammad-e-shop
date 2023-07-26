@@ -12,7 +12,7 @@ export default function Button(props) {
 
   function getClassNames() {
     const { className } = props;
-    return classNames(className, 'mohammad-e-shop-button');
+    return classNames('mohammad-e-shop-button', className);
   }
 
   function getProps() {
@@ -25,7 +25,7 @@ export default function Button(props) {
 }
 
 Button.propTypes = {
-    children: PropTypes.string.isRequired,
+    children: PropTypes.node.isRequired,
     className: PropTypes.string,
     handleButtonClick : PropTypes.func
 }

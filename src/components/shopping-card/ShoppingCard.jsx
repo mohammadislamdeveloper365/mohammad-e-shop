@@ -1,6 +1,9 @@
 import './ShoppingCard.css';
-import PropTypes from 'prop-types';
 import Button from '../core/button/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import PropTypes from 'prop-types';
+
 
 export default function ShoppingCard(props) {
     const { shoppingItem } = props;
@@ -13,7 +16,10 @@ export default function ShoppingCard(props) {
             <p className='mohammad-e-shop-shopping-card-description'>Manufacturer: {shoppingItem.seller}</p>
             <p className='mohammad-e-shop-shopping-card-description'>Rating: {shoppingItem.star}</p>
         </div>
-        <Button {...getButtonProps()}>Add To Cart</Button>
+        <Button {...getButtonProps()}>
+          Add To Cart
+          <FontAwesomeIcon icon={faShoppingCart} className='shopping-cart-icon'/>
+        </Button>
     </div>
   )
 

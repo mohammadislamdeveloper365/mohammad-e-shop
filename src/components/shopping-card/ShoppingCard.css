@@ -23,4 +23,10 @@
     border-radius:0.5rem;
     position:absolute;
     bottom:0px;
+    color:#6A1B4D;
+}
+
+.shopping-cart-icon {
+    color:#6A1B4D;
+    margin-left: 0.5rem;
 }
