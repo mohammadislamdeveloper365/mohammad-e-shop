@@ -1,0 +1,32 @@
+.mohammad-e-shop-shopping-summary {
+    background-color:#f0b581;
+}
+
+.mohammad-e-shop-container--shopping-summary {
+    width:15%;
+    padding: 1rem;
+}
+
+.mohammad-e-shop-container--shopping-summary-header {
+    text-align: center;
+}
+
+.mohammad-e-shop-container--shopping-summary-style {
+    margin:0.75rem 0;
+}
+
+.mohammad-e-shop-container--shopping-summary-clear-btn {
+    background-color: red;
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    width:100%;
+    border-radius: 0.5rem;
+}
+
+.mohammad-e-shop-container--shopping-summary-review-btn {
+    background-color: #6A1B4D;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    width:100%;
+    border-radius: 0.5rem;
+}

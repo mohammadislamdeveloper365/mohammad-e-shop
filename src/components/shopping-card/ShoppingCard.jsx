@@ -13,11 +13,20 @@ export default function ShoppingCard(props) {
             <p className='mohammad-e-shop-shopping-card-description'>Manufacturer: {shoppingItem.seller}</p>
             <p className='mohammad-e-shop-shopping-card-description'>Rating: {shoppingItem.star}</p>
         </div>
-        <Button className='mohammad-e-shop-shopping-card--btn'>Add To Cart</Button>
+        <Button {...getButtonProps()}>Add To Cart</Button>
     </div>
   )
+
+  function getButtonProps () {
+    const { handleButtonClick } = props;
+    return {
+      className: 'mohammad-e-shop-shopping-card--btn',
+      handleButtonClick: handleButtonClick
+    }
+  }
 }
 
 ShoppingCard.propTypes = {
-    shoppingItem : PropTypes.object
+    shoppingItem : PropTypes.object,
+    handleButtonClick: PropTypes.func
 }
