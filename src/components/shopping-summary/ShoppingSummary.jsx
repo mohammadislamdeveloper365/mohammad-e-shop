@@ -10,8 +10,8 @@ export default function ShoppingSummary(props) {
   let price = 0, shippingCharge = 0, tax = 0, grandTotal = 0;
   
   for(const product of products) {
-    price += parseFloat(product.price);
-    shippingCharge += parseFloat(product.shipping);
+    price += parseFloat((product.price * product.items).toFixed(2));
+    shippingCharge += parseFloat(product.shipping.toFixed(2));
     tax = parseFloat((0.075 *(price + shippingCharge)).toFixed(2));
     grandTotal = parseFloat((price + shippingCharge + tax).toFixed(2));
     

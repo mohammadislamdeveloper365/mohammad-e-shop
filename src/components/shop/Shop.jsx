@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import ShoppingSummary from '../shopping-summary/ShoppingSummary';
 import ShoppingCard from '../shopping-card/ShoppingCard';
+import { addToDb, getStoredCart } from '../../utilities/localStorage'
 import './Shop.css';
 
 export default function Shop(props) {
@@ -13,6 +14,20 @@ export default function Shop(props) {
     then(data=>setProducts(data))
   },[]);
 
+  useEffect(()=>{
+    const localStorageCart = getStoredCart();
+    const storedCart = [];
+
+    for(let id in localStorageCart ) {
+        const storedProduct = products.find(product=>product.key === id );
+        if(storedProduct){
+          storedProduct.items = localStorageCart[id];
+          storedCart.push(storedProduct);
+        }
+        setCart(storedCart);
+    }
+  },[products]);
+
   return (
     <div className='mohammad-e-shop-container'>
       <div className='mohammad-e-shop-container--cards'>
@@ -23,7 +38,15 @@ export default function Shop(props) {
   )
 
   function addProductToCart (product) {
-    setCart([...cart, product]);
+    addToDb(product.key);
+    if(product.items) {
+      setCart([...cart, product]);
+    }
+    
+    else {
+      product.items = 1;
+      setCart([...cart, product])
+    }
   }
 }
 
