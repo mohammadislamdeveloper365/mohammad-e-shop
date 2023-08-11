@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import Logo from '../core/logo/Logo';
-import Link from '../core/link/Link';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './Header.css';
 
@@ -11,22 +11,16 @@ export default function Header(props) {
         <Logo/>
       </div>
       <div>
-        <Link>
+        <Link to='/' className='header-navigation-link'>
           Home
         </Link>
-        <Link>
-          Order Review
-        </Link>
-        <Link>
+        <Link to='/order' className='header-navigation-link'>
           Order
         </Link>
-        <Link>
-          Home
-        </Link>
-        <Link>
+        <Link to='/inventory' className='header-navigation-link'>
           Inventory
         </Link>
-        <Link>
+        <Link to='login' className='header-navigation-link'>
           Login
         </Link>
       </div>

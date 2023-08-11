@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import ShoppingSummary from '../shopping-summary/ShoppingSummary';
-import ShoppingCard from '../shopping-card/ShoppingCard';
-import { addToDb, getStoredCart } from '../../utilities/localStorage'
-import './Shop.css';
+import ShoppingSummary from './components/shopping-summary/ShoppingSummary';
+import ShoppingCard from './components/shopping-card/ShoppingCard';
+import { addToDb, getStoredCart } from './utilities/localStorage'
+import './ShopPage.css';
 
-export default function Shop(props) {
+export default function ShopPage(props) {
   const [ products, setProducts] = useState([]);
   const [ cart, setCart ] = useState([]);
 

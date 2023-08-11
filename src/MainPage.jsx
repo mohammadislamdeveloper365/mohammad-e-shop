@@ -1,11 +1,11 @@
 import Header from './components/header/Header'
-import Shop from './components/shop/Shop'
+import { Outlet } from 'react-router-dom'
 
 export default function MainPage() {
   return (
     <div>
       <Header/>
-      <Shop/>
+      <Outlet/>
     </div>
   )
 }
