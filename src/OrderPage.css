@@ -1,0 +1,10 @@
+.mohammad-e-shop-order {
+    display:flex;
+    flex-wrap: wrap;
+    padding: 5rem 2rem;
+    justify-content: space-between;
+}
+
+.mohammad-e-shop-order-cart {
+    width:65%;
+}

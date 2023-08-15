@@ -14,7 +14,7 @@ export default function Header(props) {
         <Link to='/' className='header-navigation-link'>
           Home
         </Link>
-        <Link to='/order' className='header-navigation-link'>
+        <Link to='/order-summary' className='header-navigation-link'>
           Order
         </Link>
         <Link to='/inventory' className='header-navigation-link'>
