@@ -8,7 +8,6 @@ import PropTypes from 'prop-types';
 
 export default function ShoppingCard(props) {
     const { shoppingItem, isImg, isButton } = props;
-    console.log(shoppingItem, 'item')
   return (
     <div className={getClassName()}>
         <div className='mohammad-e-shop-shopping-card-top'>

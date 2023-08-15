@@ -1,0 +1,23 @@
+.mohammad-e-shop-review-item-container {
+    margin-top:1rem;
+    display:flex;
+    flex-wrap: wrap;
+    width:70%;
+    justify-content: space-between;
+    padding:0.5rem;
+    border: 0.1rem solid brown;
+    border-radius: 1rem;
+} 
+
+.mohammad-e-shop-review-item-details {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.mohammad-e-shop-review-item-description {
+    padding:0.25rem 0.25rem;
+}
+
+.mohammad-e-shop-review-item--img {
+    height:70px;
+}

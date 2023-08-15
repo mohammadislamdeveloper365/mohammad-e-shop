@@ -1,5 +1,5 @@
 import { useLoaderData } from 'react-router-dom'
-import ShoppingCard from './components/shopping-card/ShoppingCard'
+import ReviewItem from './components/review-item/ReviewItem';
 import ShoppingSummary from './components/shopping-summary/ShoppingSummary'
 import './OrderPage.css'
 
@@ -8,8 +8,9 @@ export default function OrderPage() {
   return (
     <div className='mohammad-e-shop-order'>
       <div className='mohammad-e-shop-order-cart'>
-        <h1>Orders : {cart.length}</h1>
-        {/* <ShoppingCard isImg={false} isButton={false}/> */}
+        {
+          cart.map(product=><ReviewItem shoppingItem={product} key={product.key}/>)
+        }
       </div>
       <div className='mohammad-e-shop-order-summary'>
         <ShoppingSummary className="mohammad-e-shop-order-summary-container" products={cart} />
