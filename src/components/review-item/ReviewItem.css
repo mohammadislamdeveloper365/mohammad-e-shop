@@ -7,6 +7,7 @@
     padding:0.5rem;
     border: 0.1rem solid brown;
     border-radius: 1rem;
+    align-items: center;
 } 
 
 .mohammad-e-shop-review-item-details {
@@ -15,9 +16,19 @@
 }
 
 .mohammad-e-shop-review-item-description {
-    padding:0.25rem 0.25rem;
+    padding:0.25rem 0.75rem;
 }
 
 .mohammad-e-shop-review-item--img {
-    height:70px;
+    height:8rem;
+    border-radius: 0.5rem;
+}
+
+.mohammad-e-shop-review-item-btn {
+    background-color: antiquewhite;
+    border-radius: 50% 50%;
+}
+.mohammad-e-shop-review-item-delete-btn {
+    color:red;
+    font-size: 1.5rem;
 }
