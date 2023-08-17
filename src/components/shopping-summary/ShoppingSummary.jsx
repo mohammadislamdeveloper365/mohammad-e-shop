@@ -7,9 +7,10 @@ import './ShoppingSummary.css';
 
 export default function ShoppingSummary(props) {
   const { products } = props;
-  let price = 0, shippingCharge = 0, tax = 0, grandTotal = 0;
+  let price = 0, shippingCharge = 0, tax = 0, grandTotal = 0, totalItems = 0;
   
   for(const product of products) {
+    totalItems += product.items;
     price += parseFloat((product.price * product.items).toFixed(2));
     shippingCharge += parseFloat(product.shipping.toFixed(2));
     tax = parseFloat((0.075 *(price + shippingCharge)).toFixed(2));
@@ -20,7 +21,7 @@ export default function ShoppingSummary(props) {
   return (
     <div className={getClassNames()}>
       <h3 className='mohammad-e-shop-container--shopping-summary-header mohammad-e-shop-container--shopping-summary-style'>Shopping Summary</h3>
-        <p className='mohammad-e-shop-container--shopping-summary-style'>Selected Items: {products.length}</p>
+        <p className='mohammad-e-shop-container--shopping-summary-style'>Selected Items: {totalItems}</p>
         <p className='mohammad-e-shop-container--shopping-summary-style'>Total Price: {price}</p>
         <p className='mohammad-e-shop-container--shopping-summary-style'>Total Shipping Charge: {shippingCharge}</p>
         <p className='mohammad-e-shop-container--shopping-summary-style'>Tax: {tax}</p>
