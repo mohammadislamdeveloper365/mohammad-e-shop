@@ -1,0 +1,12 @@
+.header-link {
+    color:rgb(231, 60, 60);
+    font-size: 1.25rem;
+}
+
+.header {
+    padding:1rem;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    background-color: antiquewhite;
+}
