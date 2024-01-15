@@ -1,13 +1,11 @@
 import './App.css';
 import Header from './components/common/Header';
-import Product from './components/common/Product';
-import Products from './components/common/Products';
+import MainPage from './components/MainPage';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Products/>
+      <MainPage/>
     </div>
   );
 }

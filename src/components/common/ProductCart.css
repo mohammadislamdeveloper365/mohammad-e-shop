@@ -1,0 +1,23 @@
+.product-cart {
+    padding: 1rem 4rem;
+    background-color: burlywood;
+}
+
+.product-cart-btn {
+    display:block;
+    width: 100%;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    color:white;
+}
+
+.product-cart-item {
+    margin: 0.75rem 0;
+}
+.clear-btn {
+    background-color: red;
+}
+
+.review-btn  {
+    background-color: purple;
+}

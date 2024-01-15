@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './Product.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingBasket } from '@fortawesome/free-solid-svg-icons'
 
 class Product extends Component {
     constructor(props) {
@@ -19,7 +21,7 @@ class Product extends Component {
                     <p className='product-info'><small>manufacturer: {seller}</small></p>
                     <p className='product-info'><small>Rating: {ratings}</small></p>
                 </div>
-                <button onClick={handleProductClick}>Add To Cart</button>
+                <button onClick={handleProductClick}>Add To Cart <FontAwesomeIcon icon={faShoppingBasket}/></button>
             </div>
         );
     }

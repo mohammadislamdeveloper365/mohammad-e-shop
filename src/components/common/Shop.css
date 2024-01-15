@@ -1,0 +1,10 @@
+.shop-container {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.shop-container-product-cart {
+    padding: 1rem 2rem;
+    width: 20%;
+    background-color: bisque;
+}

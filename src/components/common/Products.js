@@ -27,9 +27,10 @@ class Products extends Component {
     }
     render() {
         const { products = []} = this.state;
+        const { handleProduct } = this.props;
         return (
             <div className='products'>
-                {products.map(product => <Product key={product.id} product={product} handleProductClick={()=>this.handleProduct(product)}/>)}
+                {products.map(product => <Product key={product.id} product={product} handleProductClick={()=>handleProduct(product)}/>)}
             </div>
         );
     }
