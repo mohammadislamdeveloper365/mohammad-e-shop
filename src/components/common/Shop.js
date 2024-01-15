@@ -13,14 +13,20 @@ class Shop extends Component {
     }
 
     handleCart = (product) => {
-        console.log(product)
+        const {cart} = this.state;
+        const newCart = [...cart, product]
+        this.setState({
+            cart: newCart
+        });
+        
     }
     
     render() {
+        const { cart } = this.state;
         return (
             <div className='shop-container'>
                 <Products handleProduct = {this.handleCart}/>
-                <ProductCart className='shop-container-product-cart'/>
+                <ProductCart className='shop-container-product-cart' productCart={cart}/>
             </div>
         );
     }
