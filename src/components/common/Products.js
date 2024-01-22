@@ -3,31 +3,9 @@ import './Products.css';
 import Product from './Product';
 
 class Products extends Component {
-    constructor(props) {
-      super(props)
-    
-      this.state = {
-         products:[]
-      }
-    }
-
-    componentDidMount() {
-        fetch('https://raw.githubusercontent.com/ProgrammingHero1/ema-john-resources/main/fakeData/products.json')
-        .then(response => response.json())
-        .then(data=>{
-            this.setState({
-                products: data
-            })
-        })
-    }
-    
-
-    handleProduct = product => {
-        console.log(product);
-    }
+   
     render() {
-        const { products = []} = this.state;
-        const { handleProduct } = this.props;
+        const { handleProduct, products } = this.props;
         return (
             <div className='products'>
                 {products.map(product => <Product key={product.id} product={product} handleProductClick={()=>handleProduct(product)}/>)}
