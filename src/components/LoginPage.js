@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import Shop from './common/Shop';
 
-class MainPage extends Component {
+class Login extends Component {
     render() {
         return (
             <div>
-                <Shop />
+                Please Login
             </div>
         );
     }
 }
 
-export default MainPage;
+export default Login;

@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import Shop from './common/Shop';
 
-class MainPage extends Component {
+class InventoryPage extends Component {
     render() {
         return (
             <div>
-                <Shop />
+                Inventory Page
             </div>
         );
     }
 }
 
-export default MainPage;
+export default InventoryPage;

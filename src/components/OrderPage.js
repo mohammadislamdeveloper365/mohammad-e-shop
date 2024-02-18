@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import Shop from './common/Shop';
 
-class MainPage extends Component {
+class Order extends Component {
     render() {
         return (
             <div>
-                <Shop />
+                Order Page
             </div>
         );
     }
 }
 
-export default MainPage;
+export default Order;

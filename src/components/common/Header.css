@@ -1,6 +1,9 @@
 .header-link {
     color:rgb(231, 60, 60);
     font-size: 1.25rem;
+    display:inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
 }
 
 .header {

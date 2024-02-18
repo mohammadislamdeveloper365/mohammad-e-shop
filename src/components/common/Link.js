@@ -2,11 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import './Link.css';
+import { Link } from 'react-router-dom'
 
-class Link extends Component {
-    constructor(props) {
-      super(props);
-    }
+class NavigationLink extends Component {
     
     static propTypes = {
         value: PropTypes.string.isRequired,
@@ -35,4 +33,4 @@ class Link extends Component {
     }
 }
 
-export default Link;
+export default NavigationLink;
